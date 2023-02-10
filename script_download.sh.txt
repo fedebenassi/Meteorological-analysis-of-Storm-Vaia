@@ -1,0 +1,14 @@
+for DAY in "06" "07" "08"
+do
+  for HOUR in "00" "06" "12" "18"
+  do
+  if [ -f "GFS_202205${DAY}${HOUR}" ];
+  then
+  echo "GFS_202205${DAY}${HOUR} already exists, skipping"
+  else
+  echo "Downolading day: ${DAY}, hour: ${HOUR}"
+  echo "link: https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.202205${DAY}/${HOUR}/atmos/gfs.t${HOUR}z.pgrb2.0p25.f000"
+  curl -o "GFS_202205${DAY}${HOUR}" "https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.202205${DAY}/${HOUR}/atmos/gfs.t${HOUR}z.pgrb2.0p25.f000"
+  fi
+  done
+done

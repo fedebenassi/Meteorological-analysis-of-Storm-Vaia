@@ -1,0 +1,16 @@
+curl -c cookies.txt -d "email=email.unibo&passwd=password&action=login" https://rda.ucar.edu/cgi-bin/login
+
+for DAY in "26" "27" "28" "29" "30"
+do
+  for HOUR in "00" "06" "12" "18"
+  do
+  if [ -f "GFS_202205${DAY}${HOUR}" ];
+  then
+  echo "GFS_202205${DAY}${HOUR} already exists, skipping"
+  else
+  echo "Downolading day: ${DAY}, hour: ${HOUR}"
+  echo "link: https://rda.ucar.edu/data/ds084.1/2018/201810${DAY}/gfs.0p25.201810${DAY}${HOUR}.f000.grib2"
+  curl -b /home/fede/cookies.txt -o "GFS_202205${DAY}${HOUR}" "https://rda.ucar.edu/data/ds084.1/2018/201810${DAY}/gfs.0p25.201810${DAY}${HOUR}.f000.grib2"
+  fi
+  done
+done
