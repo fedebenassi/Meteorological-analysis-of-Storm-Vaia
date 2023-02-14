@@ -1,7 +1,5 @@
 ﻿# Meteorological analysis of Storm Vaia
- 
- ![image](https://user-images.githubusercontent.com/72738968/218723745-28d3bf34-5fcb-4e75-a160-b3bc4345f1c5.png)
- 
+  
  
 Authors: Federica Benassi and Chiara Ventrucci
  
