@@ -1,5 +1,8 @@
 ﻿# Meteorological analysis of Storm Vaia
  
+ ![image](https://user-images.githubusercontent.com/72738968/218723745-28d3bf34-5fcb-4e75-a160-b3bc4345f1c5.png)
+ 
+ 
 Authors: Federica Benassi and Chiara Ventrucci
  
 Extratropical cyclone Vaia developed between October 26 and 30, 2018, with a peak intensity over the northern regions of Italy. The event was simulated with the Weather Research Forecast (WRF) model of the National Center for Atmospheric Research, observing the temporal evolution of the fields of the main meteorological variables. The results obtained were then compared with ERA5 reanalysis and ARPA Veneto local precipitation data, showing that WRF is able to represent mesoscale events, but it does not achieve high accuracy at smaller scales.
